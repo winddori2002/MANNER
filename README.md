@@ -82,7 +82,7 @@ noisy_test_path = 'The resampled noisy testset path'
 
 ## 1. Train
 
--Training with default settings
+- Training with default settings
 You can train MANNER with default setting by running the following code.
 
 ```
@@ -107,7 +107,7 @@ MANNER arguments:
   --segment_len: chunk size for overlapped chunking
 ```
 
--Training with logging
+- Training with logging
 
 
 ## 2. evaluation
