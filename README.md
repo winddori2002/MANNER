@@ -22,8 +22,8 @@ Notice that if you use windows, "tempo" and "speed" augmentation based on sox ar
 
 You can install requirements through git and requirements.txt.
 ```C
-git clone 
-cd manner
+git clone https://github.com/winddori2002/MANNER.git
+cd MANNER
 pip install -r requirements.txt
 ```
 
