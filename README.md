@@ -5,7 +5,7 @@ This is a Pytorch implementation of MANNER: Multi-view Attention Network for Noi
 
 The overall architecture of MANNER is as below:
 
-<img src="https://user-images.githubusercontent.com/49035579/133537738-fb3ac1a4-aa9e-4c58-a820-8e9f613f118a.jpg" width="1000" height="500">
+<img src="https://user-images.githubusercontent.com/49035579/133537738-fb3ac1a4-aa9e-4c58-a820-8e9f613f118a.jpg" width="1000" height="400">
 
 # Installation & Enviornment
 
