@@ -21,22 +21,45 @@ For a fair comparison we downsample the audio files from 48kHz to 16kHz.
 
 - To downsample the audio, run the following code and edit the directorys.
 
-  ```
-  python downsampling.py
-  ```
+```
+python downsampling.py
+```
   
 - In the downsampleing.py script, you should change the contents as follows.
   
-  ```
-  downsample_rate = 16000
-  clean_train_path = 'The original clean trainset path'
-  noisy_train_path = 'The original noisy trainset path'
-  clean_test_path = 'The original clean testset path'
-  noisy_test_path = 'The original noisy testset path'
-  resample_path = 'Resampled path'
-  ```
+```
+downsample_rate = 16000
+clean_train_path = 'The original clean trainset path'
+noisy_train_path = 'The original noisy trainset path'
+clean_test_path = 'The original clean testset path'
+noisy_test_path = 'The original noisy testset path'
+resample_path = 'Resampled path'
+```
   
 ## 3. Make data path files
+
+We make json file consisting of the audio path for loading data efficiently. Train (clean, noisy) and 
+Test (clean, noisy): four json files need to be generated for training. 
+
+Noitce that the data is downsampled.
+
+- To make json file, run the following code and edit the directorys.
+
+```
+python make_datapath.py
+```
+
+- In the make_datapath.py script, you should change the contents as follows.
+
+```
+clean_train_path = 'The resampled clean trainset path'
+noisy_train_path = 'The resampled noisy trainset path'
+clean_test_path = 'The resampled clean testset path'
+noisy_test_path = 'The resampled noisy testset path'
+```
+
+
+
 
 
 
