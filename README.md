@@ -97,15 +97,21 @@ If you want to edit model settings, you can run the following code with other ar
 python main.py train --hidden 60 --depth 4 --growth 2 --kernel_size 8 --stride 4 --segment_len 64
 
 MANNER arguments:
-  --in_channels: initial in channel size
-  --out_channels: initial out channel size
-  --hidden: channel size to expand
-  --depth: number of layers for encoder and decoder
-  --kernel_size: kernel size for UP/DOWN conv
-  --stride: stride for UP/DOWN conv
-  --growth: channel expansion ration 
-  --head: number of head for global attention
-  --segment_len: chunk size for overlapped chunking
+  --in_channels: initial in channel size (default:1)
+  --out_channels: initial out channel size (default:1)
+  --hidden: channel size to expand (default:60)
+  --depth: number of layers for encoder and decoder (default:4)
+  --kernel_size: kernel size for UP/DOWN conv (default:8)
+  --stride: stride for UP/DOWN conv (default:4)
+  --growth: channel expansion ration (default:2)
+  --head: number of head for global attention (default:1)
+  --segment_len: chunk size for overlapped chunking (default:64)
+  
+Setting arguments:
+  --sample_rate: sample_rate (default:16000)
+  --segment: segment the audio signal with seconds (default:4)
+  --set_stride: Overlapped seconds when segment the signal (default:1)
+  
 ```
 
 ### Training with logging
