@@ -9,6 +9,12 @@ The overall architecture of MANNER is as below:
 
 # Installation & Enviornment
 
+- Windows: Windows does not support sox based augmentation (tempo, speed), only avaiable "shift" augmentation.
+- Linux 
+- python >= 3.7.4
+- pytorch == 1.7.1
+- torchaudio == 0.7.2
+
 # Prepare for usage
 
 ## 1. Prepare dataset
