@@ -87,14 +87,16 @@ noisy_test_path = 'The resampled noisy testset path'
 You can train MANNER with default setting by running the following code.
 
 ```
-python main.py train
+python main.py train --aug True --aug_type tempo
 ```
 
 ### Training with other arguments
-If you want to edit model settings, you can run the following code with other arguments.
+If you want to edit model settings, you can run the following code with other arguments. 
+
+In configuration.py, you can find other arguments, such as batach size, epoch, and so on.
 
 ```
-python main.py train --hidden 60 --depth 4 --growth 2 --kernel_size 8 --stride 4 --segment_len 64
+python main.py train --hidden 60 --depth 4 --growth 2 --kernel_size 8 --stride 4 --segment_len 64 --aug True --aug_type tempo
 
 MANNER arguments:
   --in_channels: initial in channel size (default:1)
@@ -112,15 +114,47 @@ Setting arguments:
   --segment: segment the audio signal with seconds (default:4)
   --set_stride: Overlapped seconds when segment the signal (default:1)
   
+Augmentation arguments:
+  --aug: True/False 
+  --aug_type: augmentation type (tempo, speed, shift available. only shift available on Windows.)
 ```
 
 ### Training with logging
 
+The logs are uploaded on [neptune.ai](https://neptune.ai/)
+```
+python main.py train --logging True --logging_cut -1
+
+Logging arguments:
+  --logging: True/False
+  --logging_cut: log after epochs when the epoch is bigger than logging_cut
+```
 
 ## 2. evaluation
 
+After training, you can evaluate the model in terms of PESQ and STOI by running the code below.
+You need to keep the model arguments in training phase.
+```
+python main.py test --save_enhanced True --enhanced_path []
+
+evaluation arguments:
+  --save_enhanced: saving enhanced audio file
+  --enhanced_path: enhanced file directory
+```
+
+If you want to evaluate with all measures (PESQ, STOI, CSIG, CBAK, CVOL), run the following code.
+```
+python eval_measure.py
+
+clean_path = test clean path
+enhanced_path = enhanced path
+```
+
+
+
 ## 3. Pretrained weights
 
+The pretrained weights of MANNER is uploaded on github.
 
 
 # Experimental Results
