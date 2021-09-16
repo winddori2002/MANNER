@@ -9,8 +9,10 @@ This is a Pytorch implementation of MANNER: Multi-view Attention Network for Noi
 
 ## 1. Prepare dataset
 
-We use VoiceBank-DEMAND (Valentini) data set for training MANNER. 
-The dataset can be downloaded here.
+We use VoiceBank-DEMAND (Valentini) dataset consisting 28 speakers for training MANNER. 
+
+
+The dataset can be downloaded [here](https://datashare.ed.ac.uk/handle/10283/2791).
 
 ## 2. Downsample
 
