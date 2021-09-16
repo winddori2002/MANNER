@@ -82,12 +82,14 @@ noisy_test_path = 'The resampled noisy testset path'
 
 ## 1. Train
 
+-Training with default settings
 You can train MANNER with default setting by running the following code.
 
 ```
 python main.py train
 ```
 
+- Training with other arguments
 If you want to edit model settings, you can run the following code with other arguments.
 
 ```
@@ -105,14 +107,14 @@ MANNER arguments:
   --segment_len: chunk size for overlapped chunking
 ```
 
+-Training with logging
+
 
 ## 2. evaluation
 
 ## 3. Pretrained weights
 
-## 4. Configuration
 
-## 5. Logging
 
 # Experimental Results
 
