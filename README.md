@@ -14,8 +14,10 @@ The dataset can be downloaded here.
 
 ## 2. Downsample
 
-The sample rate of the dataset is 48kHz. \\
-For a fair comparison we downsample the audio files from 48kHz to 16kHz. \\
+The sample rate of the dataset is 48kHz.
+
+For a fair comparison we downsample the audio files from 48kHz to 16kHz.
+
 To downsample the audio, run the following code and edit the directorys.
 
   ```
