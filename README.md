@@ -9,10 +9,9 @@ This is a Pytorch implementation of MANNER: Multi-view Attention Network for Noi
 
 ## 1. Prepare dataset
 
-- We use VoiceBank-DEMAND (Valentini) dataset consisting 28 speakers for training MANNER. 
+We use VoiceBank-DEMAND (Valentini) dataset consisting 28 speakers for training MANNER. 
 
-
-The dataset can be downloaded [here](https://datashare.ed.ac.uk/handle/10283/2791).
+- The dataset can be downloaded [here](https://datashare.ed.ac.uk/handle/10283/2791).
 
 ## 2. Downsample
 
@@ -20,20 +19,22 @@ The sample rate of the dataset is 48kHz.
 
 For a fair comparison we downsample the audio files from 48kHz to 16kHz.
 
-To downsample the audio, run the following code and edit the directorys.
+- To downsample the audio, run the following code and edit the directorys.
 
   ```
   python downsampling.py
   ```
   
-In the downsampleing.py script, you should change the contents as follows.
+- In the downsampleing.py script, you should change the contents as follows.
   
+  ```
   downsample_rate = 16000
   clean_train_path = 'The original clean trainset path'
   noisy_train_path = 'The original noisy trainset path'
   clean_test_path = 'The original clean testset path'
   noisy_test_path = 'The original noisy testset path'
   resample_path = 'Resampled path'
+  ```
   
 ## 3. Make data path files
 
