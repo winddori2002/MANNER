@@ -146,10 +146,9 @@ If you want to evaluate with all measures (PESQ, STOI, CSIG, CBAK, CVOL), run th
 ```
 python eval_measure.py
 
-clean_path = test clean path
-enhanced_path = enhanced path
+clean_path = 'test clean path'
+enhanced_path = 'enhanced path'
 ```
-
 
 
 ## 3. Pretrained weights
