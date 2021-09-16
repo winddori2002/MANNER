@@ -4,15 +4,15 @@ This is a Pytorch implementation of MANNER: Multi-view Attention Network for Noi
 
 # Installation & Enviornment
 
-
-
-# How to use
+# Prepare for usage
 
 ## Prepare dataset
 
 ## Downsample
 
 ## Make data path files
+
+# How to use
 
 ## Train
 
