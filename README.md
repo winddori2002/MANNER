@@ -18,6 +18,13 @@ The OS, python and pytorch version needs as below:
 
 Notice that if you use windows, "tempo" and "speed" augmentation based on sox are not avaiable. You need to use "shift" augmentation.
 
+You can install requirements through git and requirements.txt.
+```C
+git clone 
+cd manner
+pip install -r requirements.txt
+```
+
 # Prepare for usage
 
 ## 1. Prepare dataset
