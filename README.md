@@ -88,6 +88,24 @@ You can train MANNER with default setting by running the following code.
 python main.py train
 ```
 
+If you want to edit model settings, you can run the following code with other arguments.
+
+```
+python main.py train --hidden 60 --depth 4 --growth 2 --kernel_size 8 --stride 4 --segment_len 64
+
+MANNER arguments:
+  --in_channels: initial in channel size
+  --out_channels: initial out channel size
+  --hidden: channel size to expand
+  --depth: number of layers for encoder and decoder
+  --kernel_size: kernel size for UP/DOWN conv
+  --stride: stride for UP/DOWN conv
+  --growth: channel expansion ration 
+  --head: number of head for global attention
+  --segment_len: chunk size for overlapped chunking
+```
+
+
 ## 2. evaluation
 
 ## 3. Pretrained weights
