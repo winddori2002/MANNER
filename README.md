@@ -78,16 +78,15 @@ clean_test_path = 'The resampled clean testset path'
 noisy_test_path = 'The resampled noisy testset path'
 ```
 
-
-
-
-
-
-
-
 # How to use
 
 ## 1. Train
+
+You can train MANNER with default setting by running the following code.
+
+```
+python main.py train
+```
 
 ## 2. evaluation
 
