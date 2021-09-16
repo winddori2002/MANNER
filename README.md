@@ -84,8 +84,7 @@ noisy_test_path = 'The resampled noisy testset path'
 # Experimental Results
 
 |:---|:---:|---:| 
-|내용1|내용2|내용3|
-|내용1|내용2|내용3|
+
 
 # Citation
 
