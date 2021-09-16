@@ -17,7 +17,7 @@ The dataset can be downloaded here.
 The sample rate of the dataset is 48kHz. For a fair comparison we downsample the audio files from 48kHz to 16kHz.
 To downsample the audio, run the following code and edit the directorys.
 
-  python downsampling.py
+  code python downsampling.py
   
 In the downsampleing.py script, you should change the contents as follows.
   
