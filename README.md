@@ -20,7 +20,7 @@ The OS, python and pytorch version needs as below:
 
 Notice that if you use windows, "tempo" and "speed" augmentation based on sox are not avaiable. You need to use "shift" augmentation.
 
-You can install requirements through git and requirements.txt.
+You can install requirements through git and requirements.txt except pytorch and torchaudio.
 ```C
 git clone https://github.com/winddori2002/MANNER.git
 cd MANNER
