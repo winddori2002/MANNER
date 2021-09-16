@@ -164,8 +164,3 @@ The pretrained weights of MANNER is uploaded on github.
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |MANNER (small)|3.12|95|4.45|3.61|3.82|
 |MANNER|3.21|95|4.53|3.65|3.91|
-
-
-# Citation
-
-# License
