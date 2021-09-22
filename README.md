@@ -156,7 +156,11 @@ enhanced_path = 'enhanced path'
 
 ## 3. Pretrained weights
 
-The pretrained weights of MANNER is uploaded on github.
+The pretrained weights of MANNER is uploaded on github './weights'.
+
+## 4. MANNER small
+
+We provide models.py and weigths for MANNER (small) in './manner_small' directory. You can try MANNER (small) by changing the models.py and weights.
 
 
 # Experimental Results
