@@ -156,7 +156,7 @@ enhanced_path = 'enhanced path'
 
 ## 3. Pretrained weights
 
-The pretrained weights of MANNER is uploaded on github './weights'.
+The pretrained weights of MANNER is uploaded on github ```./weights```.
 
 ## 4. MANNER small
 
