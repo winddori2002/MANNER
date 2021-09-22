@@ -18,9 +18,9 @@ The OS, python and pytorch version needs as below:
 - pytorch == 1.7.1
 - torchaudio == 0.7.2
 
-Notice that if you use windows, "tempo" and "speed" augmentation based on sox are not avaiable. You need to use "shift" augmentation.
+Notice that if you use windows, "tempo" and "speed" augmentation based on sox are not available. You need to use "shift" augmentation.
 
-You can install requirements through git and requirements.txt except pytorch and torchaudio.
+You can install requirements through git and requirements.txt except for pytorch and torchaudio.
 ```C
 git clone https://github.com/winddori2002/MANNER.git
 cd MANNER
@@ -31,9 +31,10 @@ pip install -r requirements.txt
 
 ## 1. Prepare dataset
 
-We use VoiceBank-DEMAND (Valentini) dataset consisting 28 speakers for training MANNER. 
+We use VoiceBank-DEMAND (Valentini) dataset consisting of 28 speakers for training MANNER. 
 
 - The dataset can be downloaded [here](https://datashare.ed.ac.uk/handle/10283/2791).
+- We use [282,287] speakers as validation set.
 
 ## 2. Downsample
 
