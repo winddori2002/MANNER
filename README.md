@@ -96,7 +96,7 @@ python main.py train --aug True --aug_type tempo
 ### Training with other arguments
 If you want to edit model settings, you can run the following code with other arguments. 
 
-In ```configuration.py```, you can find other arguments, such as batch size, epoch, and so on.
+In ```config.py```, you can find other arguments, such as batch size, epoch, and so on.
 
 ```
 python main.py train --hidden 60 --depth 4 --growth 2 --kernel_size 8 --stride 4 --segment_len 64 --aug True --aug_type tempo
