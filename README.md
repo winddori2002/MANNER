@@ -64,7 +64,7 @@ resample_path = 'Resampled path'
 We make json file consisting of the audio path for loading data efficiently. Train (clean, noisy) and 
 Test (clean, noisy): four json files need to be generated for training. 
 
-The json files will be generated in ```.data_path/```.
+The json files will be generated in ```./data_path```.
 
 Notice that the data is downsampled.
 
