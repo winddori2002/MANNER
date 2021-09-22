@@ -48,7 +48,7 @@ For a fair comparison, we downsample the audio files from 48kHz to 16kHz.
 python downsampling.py
 ```
   
-- In the downsampleing.py script, you should change the contents as follows.
+- In the ```downsampleing.py``` script, you should change the contents as follows.
   
 ```
 downsample_rate = 16000
@@ -72,7 +72,7 @@ Notice that the data is downsampled.
 python make_datapath.py
 ```
 
-- In the make_datapath.py script, you should change the contents as follows.
+- In the ```make_datapath.py```, you should change the contents as follows.
 
 ```
 clean_train_path = 'The resampled clean trainset path'
@@ -96,7 +96,7 @@ python main.py train --aug True --aug_type tempo
 ### Training with other arguments
 If you want to edit model settings, you can run the following code with other arguments. 
 
-In configuration.py, you can find other arguments, such as batch size, epoch, and so on.
+In ```configuration.py```, you can find other arguments, such as batch size, epoch, and so on.
 
 ```
 python main.py train --hidden 60 --depth 4 --growth 2 --kernel_size 8 --stride 4 --segment_len 64 --aug True --aug_type tempo
@@ -160,7 +160,7 @@ The pretrained weights of MANNER is uploaded on github './weights'.
 
 ## 4. MANNER small
 
-We provide ```models.py``` and weigths for MANNER (small) in './manner_small' directory. You can try MANNER (small) by changing the models.py and weights.
+We provide ```models.py``` and weigths for MANNER (small) in ```./manner_small```. You can try MANNER (small) by changing the models.py and weights.
 
 
 # Experimental Results
