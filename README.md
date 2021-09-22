@@ -64,9 +64,9 @@ resample_path = 'Resampled path'
 We make json file consisting of the audio path for loading data efficiently. Train (clean, noisy) and 
 Test (clean, noisy): four json files need to be generated for training. 
 
-Noitce that the data is downsampled.
+Notice that the data is downsampled.
 
-- To make json file, run the following code and edit the directorys.
+- To make json file, run the following code and edit the directories.
 
 ```
 python make_datapath.py
@@ -87,7 +87,7 @@ noisy_test_path = 'The resampled noisy testset path'
 
 ### Training with default settings
 
-You can train MANNER with default setting by running the following code.
+You can train MANNER with the default setting by running the following code.
 
 ```
 python main.py train --aug True --aug_type tempo
@@ -96,7 +96,7 @@ python main.py train --aug True --aug_type tempo
 ### Training with other arguments
 If you want to edit model settings, you can run the following code with other arguments. 
 
-In configuration.py, you can find other arguments, such as batach size, epoch, and so on.
+In configuration.py, you can find other arguments, such as batch size, epoch, and so on.
 
 ```
 python main.py train --hidden 60 --depth 4 --growth 2 --kernel_size 8 --stride 4 --segment_len 64 --aug True --aug_type tempo
@@ -136,7 +136,7 @@ Logging arguments:
 ## 2. evaluation
 
 After training, you can evaluate the model in terms of PESQ and STOI by running the code below.
-You need to keep the model arguments in training phase.
+You need to keep the model arguments in the training phase.
 ```
 python main.py test --save_enhanced True --enhanced_path []
 
