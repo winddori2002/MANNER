@@ -147,7 +147,7 @@ evaluation arguments:
   --enhanced_path: enhanced file directory
 ```
 
-If you want to evaluate with all measures (PESQ, STOI, CSIG, CBAK, CVOL), run the following code.
+If you want to evaluate with all measures (PESQ, STOI, CSIG, CBAK, COVL), run the following code.
 ```
 python eval_measure.py
 
@@ -169,7 +169,7 @@ We provide ```models.py``` and weigths for MANNER (small) in ```./manner_small``
 
 # Experimental Results
 
-|Model|PESQ|STOI|CSIG|CBAK|CVOL|
+|Model|PESQ|STOI|CSIG|CBAK|COVL|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |MANNER (small)|3.12|95|4.45|3.61|3.82|
 |MANNER|3.21|95|4.53|3.65|3.91|
