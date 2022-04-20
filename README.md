@@ -1,7 +1,7 @@
 
 # MANNER: Multi-view Attention Network for Noise ERasure (ICASSP 2022)
 
-This is a Pytorch implementation of [MANNER: Multi-view Attention Network for Noise ERasement](https://arxiv.org/abs/2203.02181). MANNER is a deep learning model for speech enhancement in time-domain. MANNER consists of encoder-decoder based on U-net. Each encoder and decoder contains Up/Down conv, Residual Conformer block, and Multi-view Attention block. MANNER representing full information of the signal efficiently addresses channel and long sequential features. Experimental results on the VoiceBank-DEMAND dataset suggest that MANNER achieves state-of-the-art performance. In addition, among time-domain models, MANNER shows efficient results in terms of inference speed and memory usage.
+This is a Pytorch implementation of [MANNER: Multi-view Attention Network for Noise ERasure](https://arxiv.org/abs/2203.02181). MANNER is a deep learning model for speech enhancement in time-domain. MANNER consists of encoder-decoder based on U-net. Each encoder and decoder contains Up/Down conv, Residual Conformer block, and Multi-view Attention block. MANNER representing full information of the signal efficiently addresses channel and long sequential features. Experimental results on the VoiceBank-DEMAND dataset suggest that MANNER achieves state-of-the-art performance. In addition, among time-domain models, MANNER shows efficient results in terms of inference speed and memory usage.
 
 The overall architecture of MANNER is as below:
 
@@ -182,3 +182,7 @@ The experimental results and parameter settings of MANNER versions are as below.
 |MANNER (small)|3.12|95|4.45|3.61|3.82|
 |MANNER|3.21|95|4.53|3.65|3.91|
 |MANNER (Large)|3.21|95|4.53|3.65|3.91|
+
+## Citation
+
+## Citation
