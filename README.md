@@ -51,7 +51,7 @@ python downsampling.py
 - In the ```downsampleing.py``` script, you should change the contents as follows.
   
 ```
-downsample_rate = 16000
+downsample_rate  = 16000
 clean_train_path = 'The original clean trainset path'
 noisy_train_path = 'The original noisy trainset path'
 clean_test_path  = 'The original clean testset path'
