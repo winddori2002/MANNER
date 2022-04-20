@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Modifications in Dataset
+# Modifications in Dataset: Select speaker sets.
 # 
 # Original copyright:
 # Copyright (c) Facebook, Inc. and its affiliates.
