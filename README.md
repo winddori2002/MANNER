@@ -54,9 +54,9 @@ python downsampling.py
 downsample_rate = 16000
 clean_train_path = 'The original clean trainset path'
 noisy_train_path = 'The original noisy trainset path'
-clean_test_path = 'The original clean testset path'
-noisy_test_path = 'The original noisy testset path'
-resample_path = 'Resampled path'
+clean_test_path  = 'The original clean testset path'
+noisy_test_path  = 'The original noisy testset path'
+resample_path    = 'Resampled path'
 ```
   
 ## 3. Make data path files
@@ -79,8 +79,8 @@ python make_datapath.py
 ```
 clean_train_path = 'The resampled clean trainset path'
 noisy_train_path = 'The resampled noisy trainset path'
-clean_test_path = 'The resampled clean testset path'
-noisy_test_path = 'The resampled noisy testset path'
+clean_test_path  = 'The resampled clean testset path'
+noisy_test_path  = 'The resampled noisy testset path'
 ```
 
 # How to use
@@ -104,23 +104,23 @@ In ```config.py```, you can find other arguments, such as batch size, epoch, and
 python main.py train --hidden 60 --depth 4 --growth 2 --kernel_size 8 --stride 4 --segment_len 64 --aug True --aug_type tempo
 
 MANNER arguments:
-  --in_channels: initial in channel size (default:1)
+  --in_channels : initial in channel size (default:1)
   --out_channels: initial out channel size (default:1)
-  --hidden: channel size to expand (default:60)
-  --depth: number of layers for encoder and decoder (default:4)
-  --kernel_size: kernel size for UP/DOWN conv (default:8)
-  --stride: stride for UP/DOWN conv (default:4)
-  --growth: channel expansion ration (default:2)
-  --head: number of head for global attention (default:1)
-  --segment_len: chunk size for overlapped chunking in a dual-path processing (default:64)
+  --hidden      : channel size to expand (default:60)
+  --depth       : number of layers for encoder and decoder (default:4)
+  --kernel_size : kernel size for UP/DOWN conv (default:8)
+  --stride      : stride for UP/DOWN conv (default:4)
+  --growth      : channel expansion ration (default:2)
+  --head        : number of head for global attention (default:1)
+  --segment_len : chunk size for overlapped chunking in a dual-path processing (default:64)
   
 Setting arguments:
   --sample_rate: sample_rate (default:16000)
-  --segment: segment the audio signal with seconds (default:4)
-  --set_stride: Overlapped seconds when segment the signal (default:1)
+  --segment    : segment the audio signal with seconds (default:4)
+  --set_stride : Overlapped seconds when segment the signal (default:1)
   
 Augmentation arguments:
-  --aug: True/False 
+  --aug     : True/False 
   --aug_type: augmentation type (tempo, speed, shift available. only shift available on Windows.)
 ```
 
@@ -131,7 +131,7 @@ The logs are uploaded on [neptune.ai](https://neptune.ai/)
 python main.py train --logging True --logging_cut -1
 
 Logging arguments:
-  --logging: True/False
+  --logging    : True/False
   --logging_cut: log after epochs when the epoch is bigger than logging_cut
 ```
 
@@ -151,7 +151,7 @@ If you want to evaluate with all measures (PESQ, STOI, CSIG, CBAK, COVL), run th
 ```
 python eval_measure.py
 
-clean_path = 'test clean path'
+clean_path    = 'test clean path'
 enhanced_path = 'enhanced path'
 ```
 
