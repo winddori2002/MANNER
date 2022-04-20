@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 # Modifications in multi-resoultion STFT loss for weighted loss
 # 
-# Original copyright:
+# copyright:
 # Copyright (c) Facebook, Inc. and its affiliates.
 # Demucs (https://github.com/facebookresearch/denoiser) / author: adefossez
 #
-# copyright 2019 Tomoki Hayashi
+# Original copyright 2019 Tomoki Hayashi
 # MIT License (https://opensource.org/licenses/MIT)
 
 
