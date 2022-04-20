@@ -162,7 +162,9 @@ The pretrained weights of MANNER is uploaded on github ```./weights```.
 
 The pretrained weights will be uploaded soon.
 
-<--Otherwise, the pretrain weights can be downloaded [here](https://drive.google.com/drive/folders/17bx12hRgwaIQf2ufxlv58U96IKX3_KZr?usp=sharing)-->
+<!--
+Otherwise, the pretrain weights can be downloaded [here](https://drive.google.com/drive/folders/17bx12hRgwaIQf2ufxlv58U96IKX3_KZr?usp=sharing)
+-->
 
 ## 4. MANNER small
 
