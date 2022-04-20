@@ -1,0 +1,8 @@
+numpy
+librosa==0.8.1
+scipy
+tqdm
+neptune-client
+pyyaml
+pesq
+pystoi
