@@ -185,8 +185,11 @@ The experimental results and parameter settings of MANNER versions are as below.
 
 ## Citation
 
-## License
-
-This repository is released under the MIT license as found in the LICENSE file.
-
-The file src/stft_loss.py was adapted from kan-bayashi/ParallelWaveGAN repository. It is an unofficial implementation of the ParallelWaveGAN paper, released under the MIT License. The file scripts/matlab_eval.py was adapted from the santi-pdp/segan_pytorch repository. It is an unofficial implementation of the SEGAN paper, released under the MIT License.
+```
+@article{park2022manner,
+  title={MANNER: Multi-view Attention Network for Noise Erasure},
+  author={Park, Hyun Joon and Kang, Byung Ha and Shin, Wooseok and Kim, Jin Sob and Han, Sung Won},
+  journal={arXiv preprint arXiv:2203.02181},
+  year={2022}
+}
+```
