@@ -3,6 +3,7 @@
 # 
 # Original copyright:
 # Copyright (c) Facebook, Inc. and its affiliates.
+# The copyright is under the CC-BY-NC 4.0 from Demucs.
 # Demucs (https://github.com/facebookresearch/denoiser) / author: adefossez
 
 
