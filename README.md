@@ -164,7 +164,7 @@ Otherwise, the pretrain weights can be downloaded [here](https://drive.google.co
 
 ## 4. MANNER small
 
-We provide ```models.py``` and weigths for MANNER (small) in ```./manner_small```. You can try MANNER (small) by changing the models.py and weights.
+We provide ```models.py``` and weigths for MANNER (small). You can try MANNER (small) by changing the models.py and weights.
 
 
 # Experimental Results
