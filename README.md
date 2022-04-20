@@ -112,7 +112,7 @@ MANNER arguments:
   --stride: stride for UP/DOWN conv (default:4)
   --growth: channel expansion ration (default:2)
   --head: number of head for global attention (default:1)
-  --segment_len: chunk size for overlapped chunking (default:64)
+  --segment_len: chunk size for overlapped chunking in a dual-path processing (default:64)
   
 Setting arguments:
   --sample_rate: sample_rate (default:16000)
