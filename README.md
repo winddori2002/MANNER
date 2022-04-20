@@ -169,7 +169,16 @@ We provide ```models.py``` and weigths for MANNER (small). You can try MANNER (s
 
 # Experimental Results
 
+The experimental results and parameter settings of MANNER versions are as below.
+
+|Model|hidden|depth|kernel size|stride|
+|:---:|:---:|:---:|:---:|:---:|
+|MANNER (small)|60|4|8|4|
+|MANNER|60|4|8|4|
+|MANNER (Large)|120|4|8|4|
+
 |Model|PESQ|STOI|CSIG|CBAK|COVL|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |MANNER (small)|3.12|95|4.45|3.61|3.82|
 |MANNER|3.21|95|4.53|3.65|3.91|
+|MANNER (Large)|3.21|95|4.53|3.65|3.91|
