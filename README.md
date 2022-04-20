@@ -185,4 +185,8 @@ The experimental results and parameter settings of MANNER versions are as below.
 
 ## Citation
 
-## Citation
+## License
+
+This repository is released under the MIT license as found in the LICENSE file.
+
+The file denoiser/stft_loss.py was adapted from the kan-bayashi/ParallelWaveGAN repository. It is an unofficial implementation of the ParallelWaveGAN paper, released under the MIT License. The file scripts/matlab_eval.py was adapted from the santi-pdp/segan_pytorch repository. It is an unofficial implementation of the SEGAN paper, released under the MIT License.
