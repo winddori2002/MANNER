@@ -3,7 +3,7 @@
 # 
 # Original copyright:
 # Copyright (c) Facebook, Inc. and its affiliates.
-# The copy right is under the CC-BY-NC.
+# The copy right is under the CC-BY-NC from Demucs.
 # Demucs (https://github.com/facebookresearch/denoiser) / author: adefossez
 
 import numpy as np
