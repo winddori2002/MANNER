@@ -11,6 +11,7 @@ class Shift(nn.Module):
     #  
     # Original copyright:
     # Copyright (c) Facebook, Inc. and its affiliates.
+    # The copy right is under the CC-BY-NC.
     # Demucs (https://github.com/facebookresearch/denoiser) / author: adefossez
     """Shift."""
 
