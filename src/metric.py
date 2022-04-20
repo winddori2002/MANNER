@@ -52,6 +52,11 @@ def get_stoi(ref_sig, out_sig, sr):
         stoi_val += stoi(ref_sig[i], out_sig[i], sr, extended=False)
     return stoi_val
 
+
+# Original copyright:
+# The copy right is under the MIT license.
+# SEGAN (https://github.com/santi-pdp/segan_pytorch) / author: santi-pdp
+
 def eval_composite(ref_wav, deg_wav):
     ref_wav = ref_wav.reshape(-1)
     deg_wav = deg_wav.reshape(-1)
