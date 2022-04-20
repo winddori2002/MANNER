@@ -197,3 +197,9 @@ The experimental results and parameter settings of MANNER versions are as below.
   year={2022}
 }
 ```
+
+## License
+
+This repository is released under the MIT license.
+
+The file ```src/dataset.py``` was adapted from the [facebookresearch/denoiser](https://github.com/facebookresearch/denoiser), released under the CC-BY-NC 4.0. license. We modified the speaker selection in the dataset. The ```src/metrics.py``` was adapted from the [facebookresearch/denoiser](https://github.com/facebookresearch/denoiser) and [santi-pdp/segan_pytorch](https://github.com/santi-pdp/segan_pytorch), where latter was released under the MIT license. The ```src/stft_loss.py``` was adapted from the [facebookresearch/denoiser](https://github.com/facebookresearch/denoiser) and [kan-bayashi/ParallelWaveGAN](https://github.com/kan-bayashi/ParallelWaveGAN), where latter was released under the MIT license.
