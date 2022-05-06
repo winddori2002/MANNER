@@ -190,11 +190,13 @@ The experimental results and parameter settings of MANNER versions are as below.
 ## Citation
 
 ```
-@article{park2022manner,
-  title={MANNER: Multi-view Attention Network for Noise Erasure},
+@inproceedings{park2022manner,
+  title={MANNER: Multi-View Attention Network For Noise Erasure},
   author={Park, Hyun Joon and Kang, Byung Ha and Shin, Wooseok and Kim, Jin Sob and Han, Sung Won},
-  journal={arXiv preprint arXiv:2203.02181},
-  year={2022}
+  booktitle={ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={7842--7846},
+  year={2022},
+  organization={IEEE}
 }
 ```
 
