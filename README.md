@@ -165,6 +165,9 @@ The pretrained weights of MANNER is uploaded on the github release [here](https:
 
 We provide ```models.py``` and weigths for MANNER (small). You can try MANNER (small) by changing the models.py and weights.
 
+## 5. Enhanced samples
+
+We provide randomly selected audio sample pairs in ```./samples```.  Each pair is composed of enhanced speech and noisy speech.
 
 # Experimental Results
 
