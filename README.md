@@ -167,7 +167,7 @@ We provide ```models.py``` and weigths for MANNER (small). You can try MANNER (s
 
 ## 5. Enhanced samples
 
-We provide randomly selected audio sample pairs in ```./samples```.  Each pair is composed of enhanced speech and noisy speech.
+We provide randomly selected audio sample pairs in ```./samples```.  Each pair is composed of enhanced speech and noisy speech. We tried to choose some pairs containing more noises.
 
 # Experimental Results
 
