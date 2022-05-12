@@ -163,7 +163,7 @@ The pretrained weights of MANNER is uploaded on the github release [here](https:
 
 ## 4. MANNER small
 
-We provide ```models.py``` and weigths for MANNER (small). You can try MANNER (small) by changing the models.py and weights.
+For MANNER (small), it is necessary to change the code in ```./model.py``` since it has a different structure from MANNER (base). The code for MANNER (small) is commented below the line for MANNER in  ```./model.py```.
 
 ## 5. Enhanced samples
 
