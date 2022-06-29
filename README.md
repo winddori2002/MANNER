@@ -47,7 +47,7 @@ For a fair comparison, we downsample the audio files from 48kHz to 16kHz.
 ```
 python downsampling.py
 ```
-  
+
 - In the ```downsampleing.py``` script, you should change the contents as follows.
   
 ```
@@ -58,7 +58,7 @@ clean_test_path  = 'The original clean testset path'
 noisy_test_path  = 'The original noisy testset path'
 resample_path    = 'Resampled path'
 ```
-  
+
 ## 3. Make data path files
 
 We make json file consisting of the audio path for loading data efficiently. Train (clean, noisy) and 
@@ -168,6 +168,41 @@ For MANNER (small), it is necessary to change the code in ```./model.py``` since
 ## 5. Enhanced samples
 
 We provide randomly selected audio sample pairs in ```./samples```.  Each pair is composed of enhanced speech and noisy speech. We tried to choose some pairs containing more noises.
+
+# How to use (with Docker)
+
+For detailed docker configuration, please take advantage of the wide internet world.
+
+## 1. Preferences (Linux only)
+
+- Install nvidia gpu driver
+- Install docker
+- Install nvidia-docker
+
+## 2. Build Dockerfile
+
+```bash
+cd YOUR/MANNER/DIR/PATH
+docker build -t manner/manner:latest .
+```
+
+## 3. Run Container
+
+```bash
+cd {YOUR/MANNER/DIR/PATH}
+docker run \
+  --gpus all \
+  -it \
+  --rm \
+  --ipc=host \
+  -v {YOUR/MANNER/ABSOULTE/DIR/PATH}:/workspace \
+  --name MANNER \
+  manner/manner:latest
+```
+
+## 4. Edit your code on the host machine and run your code inside the container!
+
+See How to Use above
 
 # Experimental Results
 
