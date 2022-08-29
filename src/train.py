@@ -7,9 +7,11 @@ from .dataset import *
 from .utils import *
 from .time_loss import *
 from .stft_loss import *
-from .models import *
+# from .models import *
 from .evaluation import *
 from .augment import *
+from .models import MANNER as MANNER_BASE
+from .models_small import MANNER as MANNER_SMALL 
 
 
 class Trainer:
@@ -17,7 +19,13 @@ class Trainer:
     def __init__(self, data, args):
         seed_init()
         self.args      = args
-        self.model     = MANNER(**args.manner).to(args.device)
+#         self.model     = MANNER(**args.manner).to(args.device)
+        if 'small' in args.model_name:
+            print('--- Load MANNER Small ---')
+            self.model = MANNER_SMALL(**args.manner).to(args.device)
+        else:
+            print('--- Load MANNER BASE or Large ---')
+            self.model = MANNER_BASE(**args.manner).to(args.device)  
         self.criterion = self.select_loss().to(args.device)
         self.stft_loss = MultiResolutionSTFTLoss(factor_sc=args.stft_sc_factor, factor_mag=args.stft_mag_factor).to(args.device)
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=args.learning_rate)
