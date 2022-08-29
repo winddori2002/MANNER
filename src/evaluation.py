@@ -13,8 +13,11 @@ from .dataset import *
 from .time_loss import *
 from .stft_loss import *
 from .utils import *
-from .models import *
+# from .models import *
 from .metric import *
+
+from .models import MANNER as MANNER_BASE
+from .models_small import MANNER as MANNER_SMALL 
 
 class Tester:
     def __init__(self, args):
@@ -27,7 +30,13 @@ class Tester:
         self.val_loader  = DataLoader(self.valset, batch_size=1, shuffle=False)
         self.testset     = TestDataset(args.dataset['test'], **self.kwargs)
         self.test_loader = DataLoader(self.testset, batch_size=1, shuffle=False)
-        self.model       = MANNER(**args.manner).to(args.device)
+#         self.model       = MANNER(**args.manner).to(args.device)
+        if 'small' in args.model_name:
+            print('--- Load MANNER Small ---')
+            self.model = MANNER_SMALL(**args.manner).to(args.device)
+        else:
+            print('--- Load MANNER BASE or Large ---')
+            self.model = MANNER_BASE(**args.manner).to(args.device)   
         
     def select_loss(self):
         
