@@ -165,7 +165,21 @@ The pretrained weights of MANNER is uploaded on the github release [here](https:
 
 For MANNER (small), it is necessary to change the code in ```./model.py``` since it has a different structure from MANNER (base). The code for MANNER (small) is commented below the line for MANNER in  ```./model.py```.
 
-## 5. Enhanced samples
+## 5. Custom enhancement
+
+For custom enhancement, you can estimate enhanced speech by running code with ```custom_enhance.py```. 
+The codes include input data processing (downsample from 48 kHz to 16 kHz).
+```
+python custom_enhance.py
+
+enhance arguments:
+  --device: Cuda device or CPU
+  --noisy_path: Path (folder) which contains noisy wav files
+  --model_name: Model version (small, base, large) - you can use one of them
+```
+
+
+## 6. Enhanced samples
 
 We provide randomly selected audio sample pairs in ```./samples```.  Each pair is composed of enhanced speech and noisy speech. We tried to choose some pairs containing more noises.
 
