@@ -34,7 +34,7 @@ def get_config():
     parser.add_argument('--save_enhanced', type=bool, default=False, help='Save option') # save the enhanced speech in test phase
     parser.add_argument('--enhanced_path', type=str, default='./enhanced', help='Enhanced path') # save the enhanced speech in test phase
     parser.add_argument('--model_path', type=str, default='./weights/', help='Model path')
-    parser.add_argument('--model_name', type=str, default='manner_model.pth', help='Model name')
+    parser.add_argument('--model_name', type=str, default='manner_base.pth', help='Model name') # select manner_ {small, base, large}
     parser.add_argument('--learning_rate', type=float, default=1e-5, help='Learning rate')
     parser.add_argument('--epoch', type=int, default=350, help='Epoch')
     parser.add_argument('--batch_size', type=int, default=4, help='Batch size')
